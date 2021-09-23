@@ -1,5 +1,1 @@
-ELK stack containers.
-
-TODO
-
-Add filebeat containers
+ELK stack containers + Logstash practice config files
