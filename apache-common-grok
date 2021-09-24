@@ -1,1 +1,1 @@
-"%{IP:ip_address} %{USER:identity} %{USER:auth} \[%{HTTPDATE:req_ts}\] \"%{WORD:http_verb} %{UROPATHPARAM:req_path}\" %{INT:http_status} %{INT:num_bytes:int}"
+    match => { "message" => '%{IP:ip_address} %{USER:identity} %{USER:auth} \[%{HTTPDATE:req_ts}] \"%{WORD:http_verb} %{URIPATHPARAM:req_path} HTTP/%{NUMBER:http_ver}\" %{INT:http_status:int} %{INT:num_bytes:int} ' }
